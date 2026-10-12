@@ -15,7 +15,6 @@
 | [`environment.yml`](environment.yml) | Conda environment (Python 3.10, GerryChain 0.2.20) |
 | [`data/`](data/) | Wisconsin CBG geometry with 2020 census demographics and 2018–2020 election returns, plus the CBG-to-matrix-row index |
 | [`results/`](results/) | Chain outputs from the original runs on the real flows |
-| [`notebooks/seed_comparison.ipynb`](notebooks/seed_comparison.ipynb) | Exploratory analysis from 2022. It reads files that were only on the lab server, so it is a record and won't run as-is |
 
 ## The biased spanning tree
 
@@ -63,7 +62,7 @@ conda activate interaction-ratio-redistricting
 
 ## Results
 
-`results/` holds the 1,000-step chains from November 2022, computed on the real SafeGraph flows. Each chain `comp{C}_bias{B}_seed{S}` has:
+`results/` holds the 1,000-step chains from November 2022, computed on the real SafeGraph flows. Chain length and seeds were chosen from earlier exploratory runs, which found that 1,000 steps captured nearly the full range of interaction-ratio values and that the random seed made no substantial difference. Each chain `comp{C}_bias{B}_seed{S}` has:
 
 | File | Contents |
 |---|---|

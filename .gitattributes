@@ -4,4 +4,3 @@
 # Keep GitHub's language stats to the code we wrote
 webmap/figure_*.html linguist-generated
 webmap/lib/** linguist-vendored
-methods/notebooks/*.ipynb linguist-documentation
