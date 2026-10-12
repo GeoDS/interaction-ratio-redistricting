@@ -78,11 +78,10 @@ Biased and unbiased ensembles are compared with Kolmogorov–Smirnov tests.
 
 | Path | Contents |
 |---|---|
-| `index.html`, `js/`, `css/`, `lib/` | Web map source (Leaflet, D3, Plotly), matching the version hosted by GeoDS |
-| `data/` | District plans (enacted, max-IR, max-compactness, max-efficiency-gap, PMC) as GeoJSON, plus ward election data |
-| `figure_*.html` | Interactive Plotly figures, including the 3-D values cube |
-| `img/` | Figures and explanatory graphics |
-| `methods/` | Ensemble and interaction-ratio code, input data, and earlier chain outputs. See [`methods/README.md`](methods/README.md) |
+| [`webmap/`](webmap/) | Web map source (Leaflet, D3, Plotly), matching the version hosted by GeoDS. `index.html` is the entry point; `data/` holds the district plans (enacted, max-IR, max-compactness, max-efficiency-gap, PMC) as GeoJSON; `figure_*.html` are the interactive Plotly figures, including the 3-D values cube |
+| [`methods/`](methods/) | Ensemble and interaction-ratio code, input data, and earlier chain outputs. See [`methods/README.md`](methods/README.md) |
+
+To run the map locally: `cd webmap && python -m http.server`, then open http://localhost:8000.
 
 ## Citation
 
