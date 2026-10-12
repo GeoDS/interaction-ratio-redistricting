@@ -1,28 +1,30 @@
 # Methods code
 
-> **Methodology, not replication.** This folder contains a working implementation of the paper's approach: ReCom ensembles with a flow-biased spanning tree, scored by interaction ratio, compactness, and efficiency gap. It is an earlier (November 2022) version of the code, and its settings differ from those used for the published results (see below). It also runs on **synthetic** mobility flows, because the original SafeGraph data cannot be redistributed. Use it to understand, adapt, or extend the method. It will **not** reproduce the paper's figures or numbers.
+> **Methodology, not replication.** This folder implements the paper's approach: ReCom ensembles with a flow-biased spanning tree, scored by interaction ratio, compactness, and efficiency gap. It comes from an earlier (November 2022) version of the experiments, and its settings differ from those used for the published results (see below). It also runs on **synthetic** mobility flows, because the original SafeGraph data cannot be redistributed. Use it to understand, adapt, or extend the method. It will **not** reproduce the paper's figures or numbers.
 
 ## What's here
 
 | Path | Contents |
 |---|---|
-| `run_chains.py` | Builds the CBG adjacency graph, weights edges by mobility flows, runs ReCom chains in parallel, and saves per-plan compactness, efficiency gap, and district assignments |
-| `interaction_ratio_parallel.py` | Computes the interaction ratio for every plan in a chain from its assignments and the flow matrix |
-| `interaction_ratio_serial.py` | Serial IR helpers, including incremental updates when only a few CBGs change district |
-| `gerrychain_modified/` | GerryChain 0.2.20 with a modified `tree.py` (see below) |
+| `run_chains.py` | Builds the CBG adjacency graph, weights edges by mobility flows, runs ReCom chains in parallel, and scores every plan |
+| `biased_tree.py` | The flow-biased spanning tree: the only change made to [GerryChain](https://github.com/mggg/gerrychain) 0.2.20. Its docstring maps each change in the original modified copy of GerryChain to its new location |
+| `interaction_ratio.py` | The interaction ratio for one plan |
+| `summarize.py` | Writes `summary.csv` (IR range, median compactness and efficiency gap per chain) for a results folder |
 | `make_synthetic_flows.py` | Generates the stand-in flow matrix |
-| `seed_comparison.ipynb` | Exploratory analysis of chain parameters and seeds |
 | `run.sh` | Runs the full pipeline |
-| `environment.yml` | Conda environment used at the time (Python 3.10) |
+| `environment.yml` | Conda environment (Python 3.10, GerryChain 0.2.20) |
 | `data/` | Wisconsin CBG geometry with 2020 census demographics and 2018–2020 election returns, plus the CBG-to-matrix-row index |
-| `results_1000step/` | Chain outputs from the original runs on the real flows |
+| `results/` | Chain outputs from the original runs on the real flows |
+| `notebooks/seed_comparison.ipynb` | Exploratory analysis from 2022. It reads files that were only on the lab server, so it is a record and won't run as-is |
 
-## How the biased spanning tree works here
+## The biased spanning tree
 
-`gerrychain_modified/gerrychain/tree.py` replaces `random_spanning_tree` with a `bias` parameter:
+ReCom repeatedly merges two adjacent districts, draws a spanning tree over their CBGs, and cuts one tree edge to split them into two population-balanced districts. `flow_biased_spanning_tree(graph, bias)` changes how that tree is drawn:
 
-- `bias = -99`: standard ReCom. Random edge weights, then a maximum spanning tree.
-- any other `bias`: a random-walk (Wilson-style) spanning tree. Each step moves to a neighbouring CBG with probability proportional to `flow ** bias`. With `bias = 1`, CBGs with strong mobility ties are more likely to be joined in the tree, and so more likely to land in the same district.
+- `bias = -99`: standard ReCom (GerryChain's own random spanning tree).
+- any other `bias`: a loop-erased random walk (Wilson's algorithm) in which each step moves to a neighbouring CBG with probability proportional to `flow ** bias`. With `bias = 1`, CBGs with strong mobility ties tend to stay connected in the tree, and so tend to land in the same district.
+
+Given the same random seeds, it produces exactly the same trees as the original modified GerryChain.
 
 ## How this differs from the published experiments
 
@@ -33,12 +35,11 @@
 | Population tolerance | 1% (constraint), 2% (ReCom ε) | up to 3% |
 | Biasing | `flow ** bias` random walk (`bias` = 1) | random weight × flow × bias factor (±100), then maximum spanning tree |
 | Max-/min-IR cut | not included | included |
-| Seeds | 2018, 1776, 1993 | — |
 | Flows | synthetic (see below) | SafeGraph 2020 |
 
 ## Data
 
-**Included:** `data/wi_2020_cbgs_voting_demo.geojson` holds 4,678 Wisconsin census block groups with population and demographics (2020 PL 94-171, via the Redistricting Data Hub) and ward-level election returns disaggregated to CBGs. It also includes the seed plan's district assignment (`dis_id`), from the People's Maps Commission.
+**Included:** `data/wi_2020_cbgs_voting_demo.geojson` holds 4,678 Wisconsin census block groups. It includes population and demographics (2020 PL 94-171, via the Redistricting Data Hub), ward-level election returns disaggregated to CBGs, and the People's Maps Commission seed plan (`dis_id`).
 
 **Not included: the mobility flows.** The paper uses SafeGraph Neighborhood Patterns, whose license does not allow redistribution, even in derived form. Instead, `make_synthetic_flows.py` writes `data/synthetic_flows.npy`, a 4,678 × 4,678 matrix with the same shape, row order, and units:
 
@@ -47,25 +48,32 @@
 
 It exists so the code runs end to end. Interaction ratios computed on it are **not** meaningful.
 
-**Using real flows:** build a matrix in the row order of `cbg_indices_WI_houseDis_pmc_2020.json`, where `flows[o, d]` is the trips from CBG `o` to CBG `d`, then point `FLOWS_MATRIX_PATH` at it. In the paper, SafeGraph device counts were scaled to population as `device_flows(o,d) × pop(o) / devices(o)` and averaged over the months of 2020. Public, already-scaled flows from the same source are available at the census-tract level in [GeoDS/COVID19USFlows](https://github.com/GeoDS/COVID19USFlows).
+**Using real flows:** build a matrix in the row order of `cbg_indices_WI_houseDis_pmc_2020.json`, where `flows[o, d]` is the trips from CBG `o` to CBG `d`, then pass `--flows` (or set `FLOWS_MATRIX_PATH`). In the paper, SafeGraph device counts were scaled to population as `device_flows(o,d) × pop(o) / devices(o)` and averaged over the months of 2020. Public, already-scaled flows from the same source are available at the census-tract level in [GeoDS/COVID19USFlows](https://github.com/GeoDS/COVID19USFlows).
 
 ## Running
 
 ```sh
 conda env create -f environment.yml
-conda activate redis2
-./run.sh        # generates synthetic flows if missing, then runs chains + IR into output/
+conda activate interaction-ratio-redistricting
+./run.sh                                     # full grid: 18 chains x 1,000 steps
+./run.sh --steps 20 --compactness 1 --seeds 2018   # quick check
 ```
 
-Chain settings (biases, seeds, compactness bounds, steps) are the lists at the bottom of `run_chains.py` and `interaction_ratio_parallel.py`. Keep them in sync. The full default grid is 18 chains of 1,000 steps and is meant for a many-core machine.
+`python run_chains.py --help` lists every option. Biased chains are much slower than unbiased ones, because the random walk takes a few seconds per tree and many trees are rejected. The full grid is meant for a many-core machine.
 
-Outputs are named `{date}_{steps}it_{compactness}comp_{bias}bias_{seed}seed_wi_2020`:
+## Results
 
-| Suffix | Contents |
+`results/` holds the 1,000-step chains from November 2022, computed on the real SafeGraph flows. Each chain `comp{C}_bias{B}_seed{S}` has:
+
+| File | Contents |
 |---|---|
-| `.csv` | mean Polsby–Popper compactness and efficiency gap for each plan |
-| `_assignments.csv` | the district of every CBG in every plan |
-| `_interaction_ratios.csv` | the above, plus interaction ratio |
+| `_metrics.csv` | per plan: mean Polsby–Popper compactness, efficiency gap, interaction ratio |
+| `_assignments.csv.gz` | district of every CBG (`cbg` = flow-matrix row, `geoid`) at every step |
+
+`summary.csv` gives one row per chain.
+
+- The unbiased chains at the 3× compactness bound were byte-for-byte identical to the 5× chains with the same seed, so only the 5× copies are kept.
+- The original runs did not seed numpy's random generator, which the biased walk uses, so the biased chains cannot be regenerated exactly. `run_chains.py` now seeds it.
 
 ## Credits
 

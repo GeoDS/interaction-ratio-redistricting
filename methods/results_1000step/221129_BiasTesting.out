@@ -1,5 +1,0 @@
-nohup: ignoring input
-Traceback (most recent call last):
-  File "/media/raid/jkruse/CS744/20221122_RunGerryChain.py", line 434, in <module>
-    pool = Pool()
-NameError: name 'Pool' is not defined. Did you mean: 'bool'?

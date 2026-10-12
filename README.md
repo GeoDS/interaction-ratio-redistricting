@@ -79,7 +79,7 @@ Biased and unbiased ensembles are compared with Kolmogorov–Smirnov tests.
 | Path | Contents |
 |---|---|
 | [`webmap/`](webmap/) | Web map source (Leaflet, D3, Plotly), matching the version hosted by GeoDS. `index.html` is the entry point; `data/` holds the district plans (enacted, max-IR, max-compactness, max-efficiency-gap, PMC) as GeoJSON; `figure_*.html` are the interactive Plotly figures, including the 3-D values cube |
-| [`methods/`](methods/) | Ensemble and interaction-ratio code, input data, and earlier chain outputs. See [`methods/README.md`](methods/README.md) |
+| [`methods/`](methods/) | Biased-ReCom and interaction-ratio code, input data, and 1,000-step chain results (`methods/results/`). See [`methods/README.md`](methods/README.md) |
 
 To run the map locally: `cd webmap && python -m http.server`, then open http://localhost:8000.
 
