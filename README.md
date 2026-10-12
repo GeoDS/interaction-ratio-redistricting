@@ -15,11 +15,55 @@ Redistricting criteria often ask that *communities of interest* be kept together
 
 Using the ReCom Markov chain algorithm, we generate ensembles of valid Wisconsin congressional plans at the census block group level. We then compare IR against compactness and partisan fairness (efficiency gap), and introduce two methods that bias sampling toward higher or lower values of a criterion.
 
+## Methods
+
+### Data
+
+| Input | Source | Unit |
+|---|---|---|
+| Human mobility flows | SafeGraph Neighborhood Patterns, monthly for 2020, averaged into one origin–destination matrix | Census block group (CBG) |
+| Population & geometry | 2020 Census redistricting data (PL 94-171), via the Redistricting Data Hub | CBG |
+| Election returns | 2018 U.S. House results, disaggregated from wards to CBGs by citizen population aged 18+ | CBG |
+
+Device-level flows (with flows from fewer than 4 devices removed) are scaled to population flows following Kang et al. (2020):
+
+$$\text{flow}_{pop}(o,d) = \text{flow}_{device}(o,d) \times \frac{\text{pop}(o)}{\text{devices}(o)}$$
+
+### Evaluation criteria
+
+| Criterion | Definition |
+|---|---|
+| **Interaction ratio (IR)** | $\displaystyle IR = \frac{\sum \text{intra-district flows}}{\sum \text{inter-district flows}}$ (higher means districts better contain the communities people actually travel within) |
+| **Compactness** | Polsby–Popper score, $4\pi A / P^2$ |
+| **Partisan fairness** | Efficiency gap, $(W_D - W_R) / V$, where $W$ is wasted votes and $V$ is total votes. Seat outcomes are also tallied against the proportional 4–4 split. |
+
+### Ensemble generation
+
+- Plans are sampled with the **ReCom** Markov chain (via [GerryChain](https://github.com/mggg/gerrychain)). Each step merges two adjacent districts, draws a spanning tree over the merged CBGs, and cuts it into two population-balanced districts.
+- All chains start from the **People's Maps Commission (PMC)** plan, which is designed to keep communities of interest intact.
+- Constraints are contiguity, a population deviation of at most 3%, and a cut-edge compactness bound of 1× or 5× the seed plan.
+- Six chains of 10,000 steps each were run:
+
+  | Compactness bound | Chains |
+  |---|---|
+  | 1× (tight) | baseline ReCom · biased spanning tree (+100) · max-IR cut |
+  | 5× (loose) | baseline ReCom · biased spanning tree (−100) · min-IR cut |
+
+### Biasing toward (or away from) interaction
+
+Two modifications steer the chain toward plans with higher or lower IR:
+
+1. **Biased spanning tree:** each edge's random weight is multiplied by its mobility flow and a bias term (±100) before the maximum spanning tree is drawn. Strongly connected CBGs are then less likely to be separated by the cut.
+2. **Max-/min-IR cut:** draw a spanning tree as usual, enumerate every valid cut, and keep the cut that most increases (or decreases) IR.
+
+Biased and unbiased ensembles are compared with Kolmogorov–Smirnov tests.
+
 ## Key results
 
-- Both biasing methods steer the ensemble toward plans with the targeted criterion values.
-- Plans with **higher interaction ratio and compactness** tend, on average, to produce **more proportional seat outcomes** between the two major parties.
-- The tradeoffs between criteria can be explored interactively in the web map, which compares the 2022 enacted map against plans that maximize IR, compactness, or efficiency gap.
+- **Biasing works.** Both methods shift the IR distribution significantly (KS *p* < 0.001). Under the tighter compactness bound, the maximum IR rises from 3.77 (unbiased) to 3.90 (biased spanning tree), moving roughly 550,000 trips from between-district to within-district.
+- **IR and compactness move together:** more compact plans tend to keep mobility communities intact.
+- **Proportionality:** the high-IR, high-compactness ensemble produces more proportional 4–4 seat splits than the low-IR, low-compactness ensemble.
+- **Usability:** a 10-participant user study found high task accuracy with the web map. The 3-D values cube was the hardest component to use.
 
 ## The web map
 
