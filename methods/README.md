@@ -6,16 +6,16 @@
 
 | Path | Contents |
 |---|---|
-| `run_chains.py` | Builds the CBG adjacency graph, weights edges by mobility flows, runs ReCom chains in parallel, and scores every plan |
-| `biased_tree.py` | The flow-biased spanning tree: the only change made to [GerryChain](https://github.com/mggg/gerrychain) 0.2.20. Its docstring maps each change in the original modified copy of GerryChain to its new location |
-| `interaction_ratio.py` | The interaction ratio for one plan |
-| `summarize.py` | Writes `summary.csv` (IR range, median compactness and efficiency gap per chain) for a results folder |
-| `make_synthetic_flows.py` | Generates the stand-in flow matrix |
-| `run.sh` | Runs the full pipeline |
-| `environment.yml` | Conda environment (Python 3.10, GerryChain 0.2.20) |
-| `data/` | Wisconsin CBG geometry with 2020 census demographics and 2018–2020 election returns, plus the CBG-to-matrix-row index |
-| `results/` | Chain outputs from the original runs on the real flows |
-| `notebooks/seed_comparison.ipynb` | Exploratory analysis from 2022. It reads files that were only on the lab server, so it is a record and won't run as-is |
+| [`run_chains.py`](run_chains.py) | Builds the CBG adjacency graph, weights edges by mobility flows, runs ReCom chains in parallel, and scores every plan |
+| [`biased_tree.py`](biased_tree.py) | The flow-biased spanning tree: the only change made to [GerryChain](https://github.com/mggg/gerrychain) 0.2.20. Its docstring maps each change in the original modified copy of GerryChain to its new location |
+| [`interaction_ratio.py`](interaction_ratio.py) | The interaction ratio for one plan |
+| [`summarize.py`](summarize.py) | Writes `summary.csv` (IR range, median compactness and efficiency gap per chain) for a results folder |
+| [`make_synthetic_flows.py`](make_synthetic_flows.py) | Generates the stand-in flow matrix |
+| [`run.sh`](run.sh) | Runs the full pipeline |
+| [`environment.yml`](environment.yml) | Conda environment (Python 3.10, GerryChain 0.2.20) |
+| [`data/`](data/) | Wisconsin CBG geometry with 2020 census demographics and 2018–2020 election returns, plus the CBG-to-matrix-row index |
+| [`results/`](results/) | Chain outputs from the original runs on the real flows |
+| [`notebooks/seed_comparison.ipynb`](notebooks/seed_comparison.ipynb) | Exploratory analysis from 2022. It reads files that were only on the lab server, so it is a record and won't run as-is |
 
 ## The biased spanning tree
 
