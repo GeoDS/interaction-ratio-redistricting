@@ -1,0 +1,43 @@
+nohup: ignoring input
+------------------------ STARTING FLOWS CALCULATION SCRIPT------------------------------
+starting computations on 72 cores
+<class 'list'> [(3.407614331212404, 0), (3.4193301941938077, 1)]
+starting computations on 72 cores
+<class 'list'> [(3.407614331212404, 0), (3.39989560152814, 1)]
+starting computations on 72 cores
+<class 'list'> [(3.407614331212404, 0), (3.39989560152814, 1)]
+starting computations on 72 cores
+<class 'list'> [(3.407614331212404, 0), (3.2389607314571287, 1)]
+starting computations on 72 cores
+<class 'list'> [(3.407614331212404, 0), (3.2360456578881838, 1)]
+starting computations on 72 cores
+<class 'list'> [(3.407614331212404, 0), (3.2360456578881838, 1)]
+starting computations on 72 cores
+<class 'list'> [(3.407614331212404, 0), (3.39819372539468, 1)]
+starting computations on 72 cores
+<class 'list'> [(3.407614331212404, 0), (3.20848845615212, 1)]
+starting computations on 72 cores
+<class 'list'> [(3.407614331212404, 0), (3.20848845615212, 1)]
+starting computations on 72 cores
+<class 'list'> [(3.407614331212404, 0), (3.424692441522776, 1)]
+starting computations on 72 cores
+<class 'list'> [(3.407614331212404, 0), (3.383831930658301, 1)]
+starting computations on 72 cores
+<class 'list'> [(3.407614331212404, 0), (3.3945792789841436, 1)]
+starting computations on 72 cores
+<class 'list'> [(3.407614331212404, 0), (3.400142726565772, 1)]
+starting computations on 72 cores
+<class 'list'> [(3.407614331212404, 0), (3.455088236458149, 1)]
+starting computations on 72 cores
+<class 'list'> [(3.407614331212404, 0), (3.3379696733240203, 1)]
+starting computations on 72 cores
+<class 'list'> [(3.407614331212404, 0), (3.4219558957541345, 1)]
+starting computations on 72 cores
+<class 'list'> [(3.407614331212404, 0), (3.4098036378484076, 1)]
+starting computations on 72 cores
+<class 'list'> [(3.407614331212404, 0), (3.2866224885491593, 1)]
+Total seconds to run script:  116.46199584007263
+Total mins to run script for 18 experiments:  1.9410332640012105
+Average mins to calc flows for one experiment:  0.10783518133340059
+20221122_Parallel_IRCalc.sh: line 11: unexpected EOF while looking for matching `''
+20221122_Parallel_IRCalc.sh: line 14: syntax error: unexpected end of file

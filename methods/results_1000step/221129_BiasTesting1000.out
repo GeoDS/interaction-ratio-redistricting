@@ -1,0 +1,560 @@
+nohup: ignoring input
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/adjacency.py:21: ShapelyDeprecationWarning: Setting custom attributes on geometry objects is deprecated, and will raise an AttributeError in Shapely 2.0
+  geometries[i].id = i
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/adjacency.py:21: ShapelyDeprecationWarning: Setting custom attributes on geometry objects is deprecated, and will raise an AttributeError in Shapely 2.0
+  geometries[i].id = i
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/adjacency.py:21: ShapelyDeprecationWarning: Setting custom attributes on geometry objects is deprecated, and will raise an AttributeError in Shapely 2.0
+  geometries[i].id = i
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/adjacency.py:21: ShapelyDeprecationWarning: Setting custom attributes on geometry objects is deprecated, and will raise an AttributeError in Shapely 2.0
+  geometries[i].id = i
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/adjacency.py:21: ShapelyDeprecationWarning: Setting custom attributes on geometry objects is deprecated, and will raise an AttributeError in Shapely 2.0
+  geometries[i].id = i
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/adjacency.py:21: ShapelyDeprecationWarning: Setting custom attributes on geometry objects is deprecated, and will raise an AttributeError in Shapely 2.0
+  geometries[i].id = i
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/adjacency.py:21: ShapelyDeprecationWarning: Setting custom attributes on geometry objects is deprecated, and will raise an AttributeError in Shapely 2.0
+  geometries[i].id = i
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/adjacency.py:21: ShapelyDeprecationWarning: Setting custom attributes on geometry objects is deprecated, and will raise an AttributeError in Shapely 2.0
+  geometries[i].id = i
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/adjacency.py:21: ShapelyDeprecationWarning: Setting custom attributes on geometry objects is deprecated, and will raise an AttributeError in Shapely 2.0
+  geometries[i].id = i
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/adjacency.py:21: ShapelyDeprecationWarning: Setting custom attributes on geometry objects is deprecated, and will raise an AttributeError in Shapely 2.0
+  geometries[i].id = i
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/adjacency.py:21: ShapelyDeprecationWarning: Setting custom attributes on geometry objects is deprecated, and will raise an AttributeError in Shapely 2.0
+  geometries[i].id = i
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/adjacency.py:21: ShapelyDeprecationWarning: Setting custom attributes on geometry objects is deprecated, and will raise an AttributeError in Shapely 2.0
+  geometries[i].id = i
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/adjacency.py:21: ShapelyDeprecationWarning: Setting custom attributes on geometry objects is deprecated, and will raise an AttributeError in Shapely 2.0
+  geometries[i].id = i
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/adjacency.py:21: ShapelyDeprecationWarning: Setting custom attributes on geometry objects is deprecated, and will raise an AttributeError in Shapely 2.0
+  geometries[i].id = i
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/adjacency.py:21: ShapelyDeprecationWarning: Setting custom attributes on geometry objects is deprecated, and will raise an AttributeError in Shapely 2.0
+  geometries[i].id = i
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/adjacency.py:21: ShapelyDeprecationWarning: Setting custom attributes on geometry objects is deprecated, and will raise an AttributeError in Shapely 2.0
+  geometries[i].id = i
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/adjacency.py:21: ShapelyDeprecationWarning: Setting custom attributes on geometry objects is deprecated, and will raise an AttributeError in Shapely 2.0
+  geometries[i].id = i
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/adjacency.py:21: ShapelyDeprecationWarning: Setting custom attributes on geometry objects is deprecated, and will raise an AttributeError in Shapely 2.0
+  geometries[i].id = i
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/graph.py:262: UserWarning: Found islands (degree-0 nodes). Indices of islands: {4002}
+  warnings.warn(
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/graph.py:262: UserWarning: Found islands (degree-0 nodes). Indices of islands: {4002}
+  warnings.warn(
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/graph.py:262: UserWarning: Found islands (degree-0 nodes). Indices of islands: {4002}
+  warnings.warn(
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/graph.py:262: UserWarning: Found islands (degree-0 nodes). Indices of islands: {4002}
+  warnings.warn(
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/graph.py:262: UserWarning: Found islands (degree-0 nodes). Indices of islands: {4002}
+  warnings.warn(
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/graph.py:262: UserWarning: Found islands (degree-0 nodes). Indices of islands: {4002}
+  warnings.warn(
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/graph.py:262: UserWarning: Found islands (degree-0 nodes). Indices of islands: {4002}
+  warnings.warn(
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/graph.py:262: UserWarning: Found islands (degree-0 nodes). Indices of islands: {4002}
+  warnings.warn(
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/graph.py:262: UserWarning: Found islands (degree-0 nodes). Indices of islands: {4002}
+  warnings.warn(
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/graph.py:262: UserWarning: Found islands (degree-0 nodes). Indices of islands: {4002}
+  warnings.warn(
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/graph.py:262: UserWarning: Found islands (degree-0 nodes). Indices of islands: {4002}
+  warnings.warn(
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/graph.py:262: UserWarning: Found islands (degree-0 nodes). Indices of islands: {4002}
+  warnings.warn(
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/graph.py:262: UserWarning: Found islands (degree-0 nodes). Indices of islands: {4002}
+  warnings.warn(
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/graph.py:262: UserWarning: Found islands (degree-0 nodes). Indices of islands: {4002}
+  warnings.warn(
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/graph.py:262: UserWarning: Found islands (degree-0 nodes). Indices of islands: {4002}
+  warnings.warn(
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/graph.py:262: UserWarning: Found islands (degree-0 nodes). Indices of islands: {4002}
+  warnings.warn(
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/graph.py:262: UserWarning: Found islands (degree-0 nodes). Indices of islands: {4002}
+  warnings.warn(
+/media/raid/jkruse/anaconda3/envs/redis2/lib/python3.10/site-packages/gerrychain/graph/graph.py:262: UserWarning: Found islands (degree-0 nodes). Indices of islands: {4002}
+  warnings.warn(
+------------------------ STARTING NEW SCRIPT------------------------------
+args.seed = 1993, args.bias = -99, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 5
+ID of process running this particular runChain worker: 60537
+Seed value set in random.py == 2018
+ID of process running this particular runChain worker: 60537
+seed value set in tree.py == None
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+Loaded data. Producing graph...
+4677
+[{4002}]
+Setting updaters and demographic cols...
+Setting edge weights as sum of DO+OD flows between the two cbgs of interest (flows within cbg ignored)
+Running chain...
+Finished running chain! Took 9.611997119585673 mins
+Mins per iteration = 0.009611997119585674
+Calculating demographic totals, flows, etc, for each partition...
+Done with calculations!
+Saving dfs...
+0 dfs saved
+csv path = ./BiasTesting/221129_BiasTesting1000.....csv
+args.seed = 1993, args.bias = -99, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 5
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+ID of process running this particular runChain worker: 60537
+Seed value set in ...Modularity.py == 456
+Total seconds to run script:  1208.057597875595
+Total hours to run script:  0.3355715549654431
+Total hours to run script for 10,000 steps:  3.3557155496544313
+------------------------ STARTING NEW SCRIPT------------------------------
+args.seed = 1776, args.bias = -99, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 5
+ID of process running this particular runChain worker: 60534
+Seed value set in random.py == 2018
+ID of process running this particular runChain worker: 60534
+seed value set in tree.py == None
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+Loaded data. Producing graph...
+4677
+[{4002}]
+Setting updaters and demographic cols...
+Setting edge weights as sum of DO+OD flows between the two cbgs of interest (flows within cbg ignored)
+Running chain...
+Finished running chain! Took 9.399642705917358 mins
+Mins per iteration = 0.009399642705917359
+Calculating demographic totals, flows, etc, for each partition...
+Done with calculations!
+Saving dfs...
+0 dfs saved
+csv path = ./BiasTesting/221129_BiasTesting1000.....csv
+args.seed = 1776, args.bias = -99, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 5
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+ID of process running this particular runChain worker: 60534
+Seed value set in ...Modularity.py == 286
+Total seconds to run script:  1220.437190771103
+Total hours to run script:  0.33901033076975085
+Total hours to run script for 10,000 steps:  3.3901033076975082
+------------------------ STARTING NEW SCRIPT------------------------------
+args.seed = 1993, args.bias = -99, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 3
+ID of process running this particular runChain worker: 60536
+Seed value set in random.py == 2018
+ID of process running this particular runChain worker: 60536
+seed value set in tree.py == None
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+Loaded data. Producing graph...
+4677
+[{4002}]
+Setting updaters and demographic cols...
+Setting edge weights as sum of DO+OD flows between the two cbgs of interest (flows within cbg ignored)
+Running chain...
+Finished running chain! Took 9.85942410628001 mins
+Mins per iteration = 0.00985942410628001
+Calculating demographic totals, flows, etc, for each partition...
+Done with calculations!
+Saving dfs...
+0 dfs saved
+csv path = ./BiasTesting/221129_BiasTesting1000.....csv
+args.seed = 1993, args.bias = -99, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 3
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+ID of process running this particular runChain worker: 60536
+Seed value set in ...Modularity.py == 456
+Total seconds to run script:  1238.2009484767914
+Total hours to run script:  0.3439447079102198
+Total hours to run script for 10,000 steps:  3.439447079102198
+------------------------ STARTING NEW SCRIPT------------------------------
+args.seed = 1776, args.bias = -99, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 3
+ID of process running this particular runChain worker: 60533
+Seed value set in random.py == 2018
+ID of process running this particular runChain worker: 60533
+seed value set in tree.py == None
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+Loaded data. Producing graph...
+4677
+[{4002}]
+Setting updaters and demographic cols...
+Setting edge weights as sum of DO+OD flows between the two cbgs of interest (flows within cbg ignored)
+Running chain...
+Finished running chain! Took 9.669405849774678 mins
+Mins per iteration = 0.009669405849774678
+Calculating demographic totals, flows, etc, for each partition...
+Done with calculations!
+Saving dfs...
+0 dfs saved
+csv path = ./BiasTesting/221129_BiasTesting1000.....csv
+args.seed = 1776, args.bias = -99, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 3
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+ID of process running this particular runChain worker: 60533
+Seed value set in ...Modularity.py == 286
+Total seconds to run script:  1254.684093952179
+Total hours to run script:  0.3485233594311608
+Total hours to run script for 10,000 steps:  3.4852335943116084
+------------------------ STARTING NEW SCRIPT------------------------------
+args.seed = 2018, args.bias = -99, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 5
+ID of process running this particular runChain worker: 60531
+Seed value set in random.py == 2018
+ID of process running this particular runChain worker: 60531
+seed value set in tree.py == None
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+Loaded data. Producing graph...
+4677
+[{4002}]
+Setting updaters and demographic cols...
+Setting edge weights as sum of DO+OD flows between the two cbgs of interest (flows within cbg ignored)
+Running chain...
+Finished running chain! Took 10.1118635058403 mins
+Mins per iteration = 0.0101118635058403
+Calculating demographic totals, flows, etc, for each partition...
+Done with calculations!
+Saving dfs...
+0 dfs saved
+csv path = ./BiasTesting/221129_BiasTesting1000.....csv
+args.seed = 2018, args.bias = -99, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 5
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+ID of process running this particular runChain worker: 60531
+Seed value set in ...Modularity.py == 623
+Total seconds to run script:  1265.643402338028
+Total hours to run script:  0.35156761176056334
+Total hours to run script for 10,000 steps:  3.5156761176056333
+------------------------ STARTING NEW SCRIPT------------------------------
+args.seed = 2018, args.bias = -99, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 3
+ID of process running this particular runChain worker: 60530
+Seed value set in random.py == 2018
+ID of process running this particular runChain worker: 60530
+seed value set in tree.py == None
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+Loaded data. Producing graph...
+4677
+[{4002}]
+Setting updaters and demographic cols...
+Setting edge weights as sum of DO+OD flows between the two cbgs of interest (flows within cbg ignored)
+Running chain...
+Finished running chain! Took 10.206609459718068 mins
+Mins per iteration = 0.010206609459718068
+Calculating demographic totals, flows, etc, for each partition...
+Done with calculations!
+Saving dfs...
+0 dfs saved
+csv path = ./BiasTesting/221129_BiasTesting1000.....csv
+args.seed = 2018, args.bias = -99, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 3
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+ID of process running this particular runChain worker: 60530
+Seed value set in ...Modularity.py == 623
+Total seconds to run script:  1277.8025600910187
+Total hours to run script:  0.35494515558083856
+Total hours to run script for 10,000 steps:  3.5494515558083855
+------------------------ STARTING NEW SCRIPT------------------------------
+args.seed = 1993, args.bias = -99, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 1
+ID of process running this particular runChain worker: 60535
+Seed value set in random.py == 2018
+ID of process running this particular runChain worker: 60535
+seed value set in tree.py == None
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+Loaded data. Producing graph...
+4677
+[{4002}]
+Setting updaters and demographic cols...
+Setting edge weights as sum of DO+OD flows between the two cbgs of interest (flows within cbg ignored)
+Running chain...
+Finished running chain! Took 22.139022743701936 mins
+Mins per iteration = 0.022139022743701935
+Calculating demographic totals, flows, etc, for each partition...
+Done with calculations!
+Saving dfs...
+0 dfs saved
+csv path = ./BiasTesting/221129_BiasTesting1000.....csv
+args.seed = 1993, args.bias = -99, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 1
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+ID of process running this particular runChain worker: 60535
+Seed value set in ...Modularity.py == 921
+Total seconds to run script:  2599.7652595043182
+Total hours to run script:  0.7221570165289772
+Total hours to run script for 10,000 steps:  7.221570165289773
+------------------------ STARTING NEW SCRIPT------------------------------
+args.seed = 1776, args.bias = -99, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 1
+ID of process running this particular runChain worker: 60532
+Seed value set in random.py == 2018
+ID of process running this particular runChain worker: 60532
+seed value set in tree.py == None
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+Loaded data. Producing graph...
+4677
+[{4002}]
+Setting updaters and demographic cols...
+Setting edge weights as sum of DO+OD flows between the two cbgs of interest (flows within cbg ignored)
+Running chain...
+Finished running chain! Took 22.779013888041177 mins
+Mins per iteration = 0.022779013888041176
+Calculating demographic totals, flows, etc, for each partition...
+Done with calculations!
+Saving dfs...
+0 dfs saved
+csv path = ./BiasTesting/221129_BiasTesting1000.....csv
+args.seed = 1776, args.bias = -99, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 1
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+ID of process running this particular runChain worker: 60532
+Seed value set in ...Modularity.py == 538
+Total seconds to run script:  2766.3321108818054
+Total hours to run script:  0.7684255863560571
+Total hours to run script for 10,000 steps:  7.68425586356057
+------------------------ STARTING NEW SCRIPT------------------------------
+args.seed = 2018, args.bias = -99, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 1
+ID of process running this particular runChain worker: 60529
+Seed value set in random.py == 2018
+ID of process running this particular runChain worker: 60529
+seed value set in tree.py == None
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+Loaded data. Producing graph...
+4677
+[{4002}]
+Setting updaters and demographic cols...
+Setting edge weights as sum of DO+OD flows between the two cbgs of interest (flows within cbg ignored)
+Running chain...
+Finished running chain! Took 25.786050923665364 mins
+Mins per iteration = 0.025786050923665364
+Calculating demographic totals, flows, etc, for each partition...
+Done with calculations!
+Saving dfs...
+0 dfs saved
+csv path = ./BiasTesting/221129_BiasTesting1000.....csv
+args.seed = 2018, args.bias = -99, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 1
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+ID of process running this particular runChain worker: 60529
+Seed value set in ...Modularity.py == 379
+Total seconds to run script:  3001.7917523384094
+Total hours to run script:  0.8338310423162248
+Total hours to run script for 10,000 steps:  8.338310423162248
+------------------------ STARTING NEW SCRIPT------------------------------
+args.seed = 1776, args.bias = 1, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 3
+ID of process running this particular runChain worker: 60542
+Seed value set in random.py == 2018
+ID of process running this particular runChain worker: 60542
+seed value set in tree.py == None
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+Loaded data. Producing graph...
+4677
+[{4002}]
+Setting updaters and demographic cols...
+Setting edge weights as sum of DO+OD flows between the two cbgs of interest (flows within cbg ignored)
+Running chain...
+Finished running chain! Took 176.9382185260455 mins
+Mins per iteration = 0.1769382185260455
+Calculating demographic totals, flows, etc, for each partition...
+Done with calculations!
+Saving dfs...
+0 dfs saved
+csv path = ./BiasTesting/221129_BiasTesting1000.....csv
+args.seed = 1776, args.bias = 1, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 3
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+ID of process running this particular runChain worker: 60542
+Seed value set in ...Modularity.py == 191
+Total seconds to run script:  21162.85275387764
+Total hours to run script:  5.878570209410455
+Total hours to run script for 10,000 steps:  58.78570209410455
+------------------------ STARTING NEW SCRIPT------------------------------
+args.seed = 2018, args.bias = 1, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 3
+ID of process running this particular runChain worker: 60539
+Seed value set in random.py == 2018
+ID of process running this particular runChain worker: 60539
+seed value set in tree.py == None
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+Loaded data. Producing graph...
+4677
+[{4002}]
+Setting updaters and demographic cols...
+Setting edge weights as sum of DO+OD flows between the two cbgs of interest (flows within cbg ignored)
+Running chain...
+Finished running chain! Took 175.0536190867424 mins
+Mins per iteration = 0.1750536190867424
+Calculating demographic totals, flows, etc, for each partition...
+Done with calculations!
+Saving dfs...
+0 dfs saved
+csv path = ./BiasTesting/221129_BiasTesting1000.....csv
+args.seed = 2018, args.bias = 1, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 3
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+ID of process running this particular runChain worker: 60539
+Seed value set in ...Modularity.py == 942
+Total seconds to run script:  21338.0568754673
+Total hours to run script:  5.92723802096314
+Total hours to run script for 10,000 steps:  59.2723802096314
+------------------------ STARTING NEW SCRIPT------------------------------
+args.seed = 1776, args.bias = 1, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 5
+ID of process running this particular runChain worker: 60543
+Seed value set in random.py == 2018
+ID of process running this particular runChain worker: 60543
+seed value set in tree.py == None
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+Loaded data. Producing graph...
+4677
+[{4002}]
+Setting updaters and demographic cols...
+Setting edge weights as sum of DO+OD flows between the two cbgs of interest (flows within cbg ignored)
+Running chain...
+Finished running chain! Took 181.70773721536 mins
+Mins per iteration = 0.18170773721536
+Calculating demographic totals, flows, etc, for each partition...
+Done with calculations!
+Saving dfs...
+0 dfs saved
+csv path = ./BiasTesting/221129_BiasTesting1000.....csv
+args.seed = 1776, args.bias = 1, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 5
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+ID of process running this particular runChain worker: 60543
+Seed value set in ...Modularity.py == 172
+Total seconds to run script:  21962.74438047409
+Total hours to run script:  6.100762327909469
+Total hours to run script for 10,000 steps:  61.00762327909469
+------------------------ STARTING NEW SCRIPT------------------------------
+args.seed = 1993, args.bias = 1, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 3
+ID of process running this particular runChain worker: 60545
+Seed value set in random.py == 2018
+ID of process running this particular runChain worker: 60545
+seed value set in tree.py == None
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+Loaded data. Producing graph...
+4677
+[{4002}]
+Setting updaters and demographic cols...
+Setting edge weights as sum of DO+OD flows between the two cbgs of interest (flows within cbg ignored)
+Running chain...
+Finished running chain! Took 178.47968137661616 mins
+Mins per iteration = 0.17847968137661616
+Calculating demographic totals, flows, etc, for each partition...
+Done with calculations!
+Saving dfs...
+0 dfs saved
+csv path = ./BiasTesting/221129_BiasTesting1000.....csv
+args.seed = 1993, args.bias = 1, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 3
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+ID of process running this particular runChain worker: 60545
+Seed value set in ...Modularity.py == 286
+Total seconds to run script:  22108.46127128601
+Total hours to run script:  6.141239242023891
+Total hours to run script for 10,000 steps:  61.41239242023891
+------------------------ STARTING NEW SCRIPT------------------------------
+args.seed = 1993, args.bias = 1, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 5
+ID of process running this particular runChain worker: 60546
+Seed value set in random.py == 2018
+ID of process running this particular runChain worker: 60546
+seed value set in tree.py == None
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+Loaded data. Producing graph...
+4677
+[{4002}]
+Setting updaters and demographic cols...
+Setting edge weights as sum of DO+OD flows between the two cbgs of interest (flows within cbg ignored)
+Running chain...
+Finished running chain! Took 184.27845064004262 mins
+Mins per iteration = 0.1842784506400426
+Calculating demographic totals, flows, etc, for each partition...
+Done with calculations!
+Saving dfs...
+0 dfs saved
+csv path = ./BiasTesting/221129_BiasTesting1000.....csv
+args.seed = 1993, args.bias = 1, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 5
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+ID of process running this particular runChain worker: 60546
+Seed value set in ...Modularity.py == 651
+Total seconds to run script:  22454.48414707184
+Total hours to run script:  6.237356707519955
+Total hours to run script for 10,000 steps:  62.373567075199546
+------------------------ STARTING NEW SCRIPT------------------------------
+args.seed = 1776, args.bias = 1, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 1
+ID of process running this particular runChain worker: 60541
+Seed value set in random.py == 2018
+ID of process running this particular runChain worker: 60541
+seed value set in tree.py == None
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+Loaded data. Producing graph...
+4677
+[{4002}]
+Setting updaters and demographic cols...
+Setting edge weights as sum of DO+OD flows between the two cbgs of interest (flows within cbg ignored)
+Running chain...
+Finished running chain! Took 391.8965779105822 mins
+Mins per iteration = 0.3918965779105822
+Calculating demographic totals, flows, etc, for each partition...
+Done with calculations!
+Saving dfs...
+0 dfs saved
+csv path = ./BiasTesting/221129_BiasTesting1000.....csv
+args.seed = 1776, args.bias = 1, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 1
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+ID of process running this particular runChain worker: 60541
+Seed value set in ...Modularity.py == 742
+Total seconds to run script:  49106.40302658081
+Total hours to run script:  13.64066750738356
+Total hours to run script for 10,000 steps:  136.4066750738356
+------------------------ STARTING NEW SCRIPT------------------------------
+args.seed = 2018, args.bias = 1, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 5
+ID of process running this particular runChain worker: 60540
+Seed value set in random.py == 2018
+ID of process running this particular runChain worker: 60540
+seed value set in tree.py == None
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+Loaded data. Producing graph...
+4677
+[{4002}]
+Setting updaters and demographic cols...
+Setting edge weights as sum of DO+OD flows between the two cbgs of interest (flows within cbg ignored)
+Running chain...
+Finished running chain! Took 193.57876412471134 mins
+Mins per iteration = 0.19357876412471134
+Calculating demographic totals, flows, etc, for each partition...
+Done with calculations!
+Saving dfs...
+0 dfs saved
+csv path = ./BiasTesting/221129_BiasTesting1000.....csv
+args.seed = 2018, args.bias = 1, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 5
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+ID of process running this particular runChain worker: 60540
+Seed value set in ...Modularity.py == 358
+Total seconds to run script:  22631.449375152588
+Total hours to run script:  6.286513715320163
+Total hours to run script for 10,000 steps:  62.86513715320163
+------------------------ STARTING NEW SCRIPT------------------------------
+args.seed = 2018, args.bias = 1, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 1
+ID of process running this particular runChain worker: 60538
+Seed value set in random.py == 2018
+ID of process running this particular runChain worker: 60538
+seed value set in tree.py == None
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+Loaded data. Producing graph...
+4677
+[{4002}]
+Setting updaters and demographic cols...
+Setting edge weights as sum of DO+OD flows between the two cbgs of interest (flows within cbg ignored)
+Running chain...
+Finished running chain! Took 433.91072976589203 mins
+Mins per iteration = 0.433910729765892
+Calculating demographic totals, flows, etc, for each partition...
+Done with calculations!
+Saving dfs...
+0 dfs saved
+csv path = ./BiasTesting/221129_BiasTesting1000.....csv
+args.seed = 2018, args.bias = 1, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 1
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+ID of process running this particular runChain worker: 60538
+Seed value set in ...Modularity.py == 336
+Total seconds to run script:  53230.37403297424
+Total hours to run script:  14.786215009159513
+Total hours to run script for 10,000 steps:  147.8621500915951
+------------------------ STARTING NEW SCRIPT------------------------------
+args.seed = 1993, args.bias = 1, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 1
+ID of process running this particular runChain worker: 60544
+Seed value set in random.py == 2018
+ID of process running this particular runChain worker: 60544
+seed value set in tree.py == None
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+Loaded data. Producing graph...
+4677
+[{4002}]
+Setting updaters and demographic cols...
+Setting edge weights as sum of DO+OD flows between the two cbgs of interest (flows within cbg ignored)
+Running chain...
+Finished running chain! Took 467.3220207532247 mins
+Mins per iteration = 0.4673220207532247
+Calculating demographic totals, flows, etc, for each partition...
+Done with calculations!
+Saving dfs...
+0 dfs saved
+csv path = ./BiasTesting/221129_BiasTesting1000.....csv
+args.seed = 1993, args.bias = 1, args.recom_steps = 1000, args.todays_date = 221129, args.compactness_multiplier = 1
+Seed value set in ...os.environ["GERRYCHAIN_RANDOM_SEED"] == None
+ID of process running this particular runChain worker: 60544
+Seed value set in ...Modularity.py == 848
+Total seconds to run script:  56802.08135342598
+Total hours to run script:  15.778355931507216
+Total hours to run script for 10,000 steps:  157.78355931507215
+Finished all experiments in this file!

@@ -8,6 +8,7 @@
 |---|---|
 | **Paper** | *Cartography and Geographic Information Science*, 51(4), 513–532 · [doi:10.1080/15230406.2023.2264750](https://doi.org/10.1080/15230406.2023.2264750) |
 | **Preprint** | [arXiv:2309.13480](https://arxiv.org/abs/2309.13480) |
+| **Code** | [`methods/`](methods/): an implementation of the methodology. It is **not** a replication package: settings differ from the paper, and it ships with synthetic mobility flows |
 
 ## Overview
 
@@ -81,6 +82,7 @@ Biased and unbiased ensembles are compared with Kolmogorov–Smirnov tests.
 | `data/` | District plans (enacted, max-IR, max-compactness, max-efficiency-gap, PMC) as GeoJSON, plus ward election data |
 | `figure_*.html` | Interactive Plotly figures, including the 3-D values cube |
 | `img/` | Figures and explanatory graphics |
+| `methods/` | Ensemble and interaction-ratio code, input data, and earlier chain outputs. See [`methods/README.md`](methods/README.md) |
 
 ## Citation
 
