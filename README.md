@@ -8,7 +8,6 @@
 |---|---|
 | **Paper** | *Cartography and Geographic Information Science*, 51(4), 513–532 · [doi:10.1080/15230406.2023.2264750](https://doi.org/10.1080/15230406.2023.2264750) |
 | **Preprint** | [arXiv:2309.13480](https://arxiv.org/abs/2309.13480) |
-| **Earlier version** | AutoCarto 2022 · [abstract](https://cartogis.org/docs/autocarto/2022/docs/abstracts/Session6_Kruse_9440.pdf) · [slides](https://cartogis.org/docs/autocarto/2022/docs/presentations/session6_kruse_presentation.pdf) |
 
 ## Overview
 
