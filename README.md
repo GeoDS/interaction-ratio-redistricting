@@ -1,24 +1,55 @@
-# Team Name
-Jake and Yuhan's Redistricting Project for Geog 575
+# Bringing Spatial Interaction Measures into Multi-Criteria Assessment of Redistricting Plans
 
-### Team Members
-* Jake Kruse
-* Yuhan Ji
+**Jacob Kruse, Song Gao, Yuhan Ji, Daniel P. Szabo, Kenneth Mayer** · GeoDS Lab, University of Wisconsin–Madison
 
-### Final Proposal
-1. Persona and scenario
-- **Persona**: Our end-user is a political science researcher who wants to learn more about how redistricting criteria are in tension with each other, in order to support their goals of providing better redistricting criteria for the State of Wisconsin. Their main goal is to find relevant literature that could support their own research, and so concise summaries and well-presented dashboards help to greatly reduce their workload. For a given redistricting approach, the researcher needs to be able to compare maps produced with different criteria in order to find patterns in district formation, and trends in the underlying demographic data, that stem from optimizing for different criteria. Finding gerrymandered districts (anomalies) and comparing them with other potential arrangements gives the researcher useful context.
-- **Scenario**:
-     To get a sense of how different district arrangements yield differential outcomes, they pull up two of the maps side by side. To compare efficiency gap, modularity, and compactness outcomes, they choose those attributes to be displayed with the choropleth maps by clicking on a attribute name or district line in the parallel coordinate plot (PCP). To filter districts to only those with attributes in certain ranges, they use the thumb slides on map and PCP legend. To rank district populations, areas, or percent of a given demographic group, they re-express the map as a bar chart. To identify a district they know well or their home location, they add an overlay with the OSM street map to give spatial context, and then they click on a district to bring up a zoomed-in map popup which has cbg-level geometry overlayed on the map, along with the cbg GEOIDs. They leave the mouse hovering over the district to retrieve relevant district census data. When comparing the map optimized for fairness to the current district map, they notice that several cbgs next to Milwaukee have changed district. They reexpress the maps as bar charts and select demographic data to be displayed, leading to the insight that the fairer map is more racially balanced than the current map.
+[**🗺️ View the interactive web map →**](https://krusejake.github.io/wi-redistricting-tradeoffs-explorer/)
 
-2. Requirements Document
-Please find the requirements.xlsx file in the main folder.
+| | |
+|---|---|
+| **Paper** | *Cartography and Geographic Information Science*, 51(4), 513–532 · [doi:10.1080/15230406.2023.2264750](https://doi.org/10.1080/15230406.2023.2264750) |
+| **Preprint** | [arXiv:2309.13480](https://arxiv.org/abs/2309.13480) |
+| **Earlier version** | AutoCarto 2022 · [abstract](https://cartogis.org/docs/autocarto/2022/docs/abstracts/Session6_Kruse_9440.pdf) · [slides](https://cartogis.org/docs/autocarto/2022/docs/presentations/session6_kruse_presentation.pdf) |
 
-3. Wireframes
-Please find Geog575 Final Project WireFrames-Final-Jake & Yuhan.pptx in the main folder.
+## Overview
 
+Redistricting criteria often ask that *communities of interest* be kept together, but common proxies such as geometric compactness and municipal splits capture this poorly. We propose the **interaction ratio (IR)**: the total human-mobility flow *within* districts divided by the total flow *between* districts, computed from large-scale mobility data. It measures how well a plan preserves communities that actually interact.
 
+Using the ReCom Markov chain algorithm, we generate ensembles of valid Wisconsin congressional plans at the census block group level. We then compare IR against compactness and partisan fairness (efficiency gap), and introduce two methods that bias sampling toward higher or lower values of a criterion.
 
+## Key results
 
+- Both biasing methods steer the ensemble toward plans with the targeted criterion values.
+- Plans with **higher interaction ratio and compactness** tend, on average, to produce **more proportional seat outcomes** between the two major parties.
+- The tradeoffs between criteria can be explored interactively in the web map, which compares the 2022 enacted map against plans that maximize IR, compactness, or efficiency gap.
 
+## The web map
 
+[krusejake.github.io/wi-redistricting-tradeoffs-explorer](https://krusejake.github.io/wi-redistricting-tradeoffs-explorer/) lets you:
+
+- view any two district plans side by side, synchronized, and color them by a chosen metric
+- compare district metrics across plans in a linked parallel-coordinates plot
+- rotate a 3-D "values cube" of sampled plans to see where each plan sits relative to reasonable alternatives
+
+## Repository contents
+
+| Path | Contents |
+|---|---|
+| `index.html`, `js/`, `css/`, `lib/` | Web map: Leaflet, D3, and Plotly |
+| `data/` | District plans (enacted, max-IR, max-compactness, max-efficiency-gap, PMC) as GeoJSON, plus ward election data |
+| `figure_*.html` | Interactive Plotly figures, including the 3-D values cube |
+| `img/` | Figures and explanatory graphics |
+
+## Citation
+
+```bibtex
+@article{kruse2024redistricting,
+  title   = {Bringing spatial interaction measures into multi-criteria assessment of redistricting plans using interactive web mapping},
+  author  = {Kruse, Jacob and Gao, Song and Ji, Yuhan and Szabo, Daniel P. and Mayer, Kenneth},
+  journal = {Cartography and Geographic Information Science},
+  volume  = {51},
+  number  = {4},
+  pages   = {513--532},
+  year    = {2024},
+  doi     = {10.1080/15230406.2023.2264750}
+}
+```
