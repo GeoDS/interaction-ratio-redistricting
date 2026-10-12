@@ -6,11 +6,11 @@ var map1, map2, pcp;
 //                 "district_effGap", "Polsby_Popper",
 //                 "intra_flows","inter_flows"]
 var attributes = [
-    'Intra_flows',
-    'Inter_flows',
-    'Dis_EffGap',
+    'Intra_flows_%',
+    'Inter_flows_%',
+    'Dis_EffGap_%',
     'Polsby_Popper',
-    'Pop',
+    'Pop_Dev_%',
     'White_%',
     'Black_%',
     'Hispanic_%',
@@ -32,16 +32,16 @@ var color1 = "rgba(116,169,207, .8)", color2 = "rgba(252,141,89, .8)";
 // Not work when changing initial setting of expression
 // need to update pcp and pcp legend when changing proposal 
 var extents = {
-'Polsby_Popper': [0.05, 0.56],
-'Intra_flows': [37, 60],
-'Inter_flows': [4, 30],
-'Dis_EffGap': [-50, 50],
-'Pop': [687333, 727988],
-'White_%': [0.45, 1],
-'Black_%': [0.00, 0.40],
-'Hispanic_%': [0.02, 0.20],
-'Asian_%': [0.01, 0.10],
-'AmIndian_%': [0.00, 0.04]}
+'Polsby_Popper': [0, 0.5],
+'Intra_flows_%': [70, 100],
+'Inter_flows_%': [0, 30],
+'Dis_EffGap_%': [-60, 60],
+'Pop_Dev_%': [0, 5],
+'White_%': [0, 100],
+'Black_%': [0, 50],
+'Hispanic_%': [0, 50],
+'Asian_%': [0, 10],
+'AmIndian_%': [0.00, 10]}
 // var extents =  { 'population': [723, 750],
 //             '18+_Pop': [559, 597],
 //             'PISLAND18': [0.2, 0.3],
@@ -1553,7 +1553,7 @@ function startIntro(){
           },
         {
             element: document.querySelector('#pcpPanel'),
-            intro: 'This parallel coordinate plot (PCP) visualizes attribute values for the districts of the two maps. Each map\'s districts are shown as lines with the same color (i.e. all lines for districts from map A are blue).'
+            intro: 'This parallel coordinates plot (PCP) visualizes attribute values for the districts of the two maps. Each map\'s districts are shown as lines with the same color (i.e. all lines for districts from map A are blue).'
         },
         {
             element: document.querySelector('.qMap2'),

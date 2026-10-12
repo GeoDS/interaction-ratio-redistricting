@@ -127,17 +127,6 @@ body {
     /* align-items: center; */
 }
 
-#pcpDescription {
-    font-family: Helvetica, sans-serif;
-    font-weight: 200;
-    font-size: .8em;
-    color: #bdbdbd;
-    position: relative;
-    bottom: -20px;
-    left: 10px;
-    line-height: normal; 
-}
-
 #checkboxGroup{
     border: #74a9cf dotted;
     border-radius: 15px;
@@ -216,20 +205,8 @@ body {
     /* border: gray solid; */
     border: white;
 }
+
 #attrSelection {
-    font-family: Verdana, sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    color: #045a8d;
-    position: relative;
-    top: 10px;
-    line-height: normal;
-    margin-right: 0;
-    /* /* border: gray solid; */
-    /* border: gray solid; */
-    /* width: 100%; */
-}
-#attrSelection2 {
     font-family: Verdana, sans-serif;
     font-weight: 600;
     font-size: 14px;

@@ -2,7 +2,7 @@
 
 **Jacob Kruse, Song Gao, Yuhan Ji, Daniel P. Szabo, Kenneth Mayer** · GeoDS Lab, University of Wisconsin–Madison
 
-[**🗺️ View the interactive web map →**](https://krusejake.github.io/wi-redistricting-tradeoffs-explorer/)
+[**🗺️ View the interactive web map →**](https://geography.wisc.edu/geods-file/redistricting/)
 
 | | |
 |---|---|
@@ -68,7 +68,7 @@ Biased and unbiased ensembles are compared with Kolmogorov–Smirnov tests.
 
 ## The web map
 
-[krusejake.github.io/wi-redistricting-tradeoffs-explorer](https://krusejake.github.io/wi-redistricting-tradeoffs-explorer/) lets you:
+[geography.wisc.edu/geods-file/redistricting](https://geography.wisc.edu/geods-file/redistricting/) lets you:
 
 - view any two district plans side by side, synchronized, and color them by a chosen metric
 - compare district metrics across plans in a linked parallel-coordinates plot
@@ -78,7 +78,7 @@ Biased and unbiased ensembles are compared with Kolmogorov–Smirnov tests.
 
 | Path | Contents |
 |---|---|
-| `index.html`, `js/`, `css/`, `lib/` | Web map: Leaflet, D3, and Plotly |
+| `index.html`, `js/`, `css/`, `lib/` | Web map source (Leaflet, D3, Plotly), matching the version hosted by GeoDS |
 | `data/` | District plans (enacted, max-IR, max-compactness, max-efficiency-gap, PMC) as GeoJSON, plus ward election data |
 | `figure_*.html` | Interactive Plotly figures, including the 3-D values cube |
 | `img/` | Figures and explanatory graphics |
