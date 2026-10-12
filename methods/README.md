@@ -69,4 +69,4 @@ Outputs are named `{date}_{steps}it_{compactness}comp_{bias}bias_{seed}seed_wi_2
 
 ## Credits
 
-Developed by Jacob Kruse as a CS 744 (UW–Madison) course project, with contributions from Dante Smith. It builds on [GerryChain](https://github.com/mggg/gerrychain) by the MGGG Redistricting Lab.
+Developed by Jacob Kruse as a CS 744 (UW–Madison) course project. It builds on [GerryChain](https://github.com/mggg/gerrychain) by the MGGG Redistricting Lab.
